@@ -8,31 +8,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5193ed9-a253-4167-827c-753994bc386a" name="Changes" comment="changing variable names">
-      <change afterPath="$PROJECT_DIR$/Mission6/Views/Shared/_ValidationScriptsPartial.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Mission6/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Mission6/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Mission6/.idea/indexLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Mission6/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mission6.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Mission06_Sargent.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mission6/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mission6/Controllers/HomeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mission6/Models/Tracker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mission6/Models/Tracker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mission6/MovieTracker.sqlite" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mission6/Views/Home/Confirmation.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Mission6/Views/Home/Confirmation.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mission6/Views/Home/GetToKnowYou.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Mission6/Views/Home/GetToKnowYou.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mission6/Views/Home/MovieTracker.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Mission6/Views/Home/MovieTracker.cshtml" afterDir="false" />
+    <list default="true" id="f5193ed9-a253-4167-827c-753994bc386a" name="Changes" comment="commit changes">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Mission6/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mission6/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mission6/MovieTracker.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/Mission6/MovieTracker.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mission6/MovieTracker.sqlite-shm" beforeDir="false" afterPath="$PROJECT_DIR$/Mission6/MovieTracker.sqlite-shm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mission6/MovieTracker.sqlite-wal" beforeDir="false" afterPath="$PROJECT_DIR$/Mission6/MovieTracker.sqlite-wal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Mission6/bin/Debug/net8.0/Mission6.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Mission6/bin/Debug/net8.0/Mission6.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Mission6/bin/Debug/net8.0/Mission6.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Mission6/bin/Debug/net8.0/Mission6.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Mission6/obj/Debug/net8.0/Mission6.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mission6/obj/Debug/net8.0/Mission6.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Mission6/obj/Debug/net8.0/Mission6.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Mission6/obj/Debug/net8.0/Mission6.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mission6/obj/Debug/net8.0/Mission6.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Mission6/obj/Debug/net8.0/Mission6.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mission6/obj/Debug/net8.0/Mission6.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Mission6/obj/Debug/net8.0/Mission6.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mission6/obj/Debug/net8.0/Mission6.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Mission6/obj/Debug/net8.0/Mission6.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Mission6/obj/Debug/net8.0/Mission6.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Mission6/obj/Debug/net8.0/Mission6.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Mission6/obj/Debug/net8.0/Mission6.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Mission6/obj/Debug/net8.0/Mission6.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Mission6/obj/Debug/net8.0/ref/Mission6.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Mission6/obj/Debug/net8.0/ref/Mission6.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Mission6/obj/Debug/net8.0/refint/Mission6.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Mission6/obj/Debug/net8.0/refint/Mission6.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mission6/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Mission6/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mission6/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Mission6/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +34,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;katesargentt&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/katesargentt/Mission06_Sargent.git&quot;,
+    &quot;accountId&quot;: &quot;522f92cf-f164-4775-8dbb-2aa1adcfcb9e&quot;
+  }
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Mission6/Views/Home/MovieTracker.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
   </component>
@@ -115,7 +116,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1739375956766</updated>
-      <workItem from="1739375958055" duration="31074000" />
+      <workItem from="1739375958055" duration="31518000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -141,7 +142,23 @@
       <option name="project" value="LOCAL" />
       <updated>1739546885573</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="new files and changes">
+      <option name="closed" value="true" />
+      <created>1739551036416</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1739551036416</updated>
+    </task>
+    <task id="LOCAL-00005" summary="commit changes">
+      <option name="closed" value="true" />
+      <created>1739551059496</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1739551059496</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,6 +171,8 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="updating names of variables" />
     <MESSAGE value="changing variable names" />
-    <option name="LAST_COMMIT_MESSAGE" value="changing variable names" />
+    <MESSAGE value="new files and changes" />
+    <MESSAGE value="commit changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit changes" />
   </component>
 </project>
