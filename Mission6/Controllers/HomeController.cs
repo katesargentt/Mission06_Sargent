@@ -36,13 +36,22 @@ public class HomeController : Controller
         return View();
     }
 
+    // POST method for MovieTracker
     [HttpPost]
     public IActionResult MovieTracker(Tracker response)
     {
-        _context.Trackers.Add(response); //add record to database
-        _context.SaveChanges(); //commit changes
-        
-        
+        // Check if the model is valid before saving
+        if (!ModelState.IsValid)
+        {
+            // If invalid, return the form with validation error messages
+            return View(response);
+        }
+
+        // Add the record to the database and save changes
+        _context.Trackers.Add(response);
+        _context.SaveChanges();
+            
+        // Redirect to a confirmation view after successful form submission
         return View("Confirmation", response);
     }
 }

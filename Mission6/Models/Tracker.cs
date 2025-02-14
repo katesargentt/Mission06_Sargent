@@ -6,28 +6,31 @@ public class Tracker
 {
     [Key]
     [Required]
-    public int MovieID { get; set; } //ApplicationID
-    
-    [Required]
+    public int MovieID { get; set; } // Primary key, auto-increment
+
+    [Required(ErrorMessage = "Category is required.")]
     public string Category { get; set; }
-    
-    [Required]
+
+    [Required(ErrorMessage = "Title is required.")]
     public string Title { get; set; }
-    
-    [Required]
+
+    [Required(ErrorMessage = "Year is required.")]
     public int Year { get; set; }
-    
-    [Required]
+
+    [Required(ErrorMessage = "Director is required.")]
     public string Director { get; set; }
-    
-    [Required]
+
+    [Required(ErrorMessage = "Rating is required.")]
     public string Rating { get; set; }
-    public string LentTo { get; set; }
-    public bool Edit { get; set; }
-    
+
+    // Nullable fields
+    public string? LentTo { get; set; }
+    public bool? Edited { get; set; }  // Nullable bool
+     
     [MaxLength(25, ErrorMessage = "Notes cannot exceed 25 characters.")]
-    public string Notes { get; set; }
+    public string? Notes { get; set; }
 }
+
 
 
 // public int GetApplicationID()
