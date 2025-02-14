@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7yp+e17pmysQW419eppUfamuOzisNIrgOjsxx/gMFqs=",
+  "Hash": "CqND4ZsWyxPhLiOzYAMxJavwcznvrHv9jaRWlRsnWkM=",
   "Source": "Mission6",
   "BasePath": "_content/Mission6",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/favicon.ico"
+    },
+    {
+      "Identity": "/Users/katesargent/RiderProjects/Mission6/Mission6/wwwroot/img/BaconsaleKate.jpg",
+      "SourceId": "Mission6",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/katesargent/RiderProjects/Mission6/Mission6/wwwroot/",
+      "BasePath": "_content/Mission6",
+      "RelativePath": "img/BaconsaleKate.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/BaconsaleKate.jpg"
     },
     {
       "Identity": "/Users/katesargent/RiderProjects/Mission6/Mission6/wwwroot/img/datelevi.jpeg",

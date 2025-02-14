@@ -13,9 +13,9 @@ public class HomeController : Controller
     //     _logger = logger;
     // }
     
-    private DatingApplicationContext _context;
+    private MovieTrackerContext _context;
     
-    public HomeController(DatingApplicationContext temp) //constructor
+    public HomeController(MovieTrackerContext temp) //constructor
     {
         _context = temp;
     }
@@ -23,18 +23,23 @@ public class HomeController : Controller
     {
         return View();
     }
+
+    public IActionResult GetToKnowYou()
+    {
+        return View();
+    }
     
     [HttpGet]
 
-    public IActionResult DatingApplication()
+    public IActionResult MovieTracker()
     {
         return View();
     }
 
     [HttpPost]
-    public IActionResult DatingApplication(Application response)
+    public IActionResult MovieTracker(Tracker response)
     {
-        _context.Applications.Add(response); //add record to database
+        _context.Trackers.Add(response); //add record to database
         _context.SaveChanges(); //commit changes
         
         

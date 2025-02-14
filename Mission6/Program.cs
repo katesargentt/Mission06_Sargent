@@ -6,9 +6,9 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddDbContext<DatingApplicationContext>(options =>
+builder.Services.AddDbContext<MovieTrackerContext>(options =>
 {
-    options.UseSqlite(builder.Configuration["ConnectionStrings:DatingConnection"]);
+    options.UseSqlite(builder.Configuration["ConnectionStrings:MovieConnection"]);
 });
 
 var app = builder.Build();

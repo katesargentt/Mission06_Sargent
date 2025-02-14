@@ -1,13 +1,12 @@
 @{
 }
-@model Mission6.Models.Application
 
-@if (Model.CreeperStalker == false)
+@model Mission6.Models.Tracker
+
+
 {
-    <h2>Application Received. Thank you, @Model.FirstName</h2>
-    <h3>Although, you really ought to be thanking me for even considering going out with you.</h3>
+    <h2>Your movie: @Model.Title, has been added to the database</h2>
+    <h3>Thank you for tracking your movies with our website!</h3>
 }
-else
-{
-    <h2>Oh shoot. My bad. I actually forgot that I'm already in a relationship. But I have a friend who I think would be perfect for you!</h2>
-}
+
+
