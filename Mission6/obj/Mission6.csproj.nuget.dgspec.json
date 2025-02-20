@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/katesargent/RiderProjects/Mission6/Mission6/Mission6.csproj": {}
+    "/Users/katesargent/RiderProjects/Mission06_Sargent/Mission6/Mission6.csproj": {}
   },
   "projects": {
-    "/Users/katesargent/RiderProjects/Mission6/Mission6/Mission6.csproj": {
+    "/Users/katesargent/RiderProjects/Mission06_Sargent/Mission6/Mission6.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/katesargent/RiderProjects/Mission6/Mission6/Mission6.csproj",
+        "projectUniqueName": "/Users/katesargent/RiderProjects/Mission06_Sargent/Mission6/Mission6.csproj",
         "projectName": "Mission6",
-        "projectPath": "/Users/katesargent/RiderProjects/Mission6/Mission6/Mission6.csproj",
+        "projectPath": "/Users/katesargent/RiderProjects/Mission06_Sargent/Mission6/Mission6.csproj",
         "packagesPath": "/Users/katesargent/.nuget/packages/",
-        "outputPath": "/Users/katesargent/RiderProjects/Mission6/Mission6/obj/",
+        "outputPath": "/Users/katesargent/RiderProjects/Mission06_Sargent/Mission6/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/katesargent/.nuget/NuGet/NuGet.Config"
@@ -83,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/Users/katesargent/.dotnet/sdk/8.0.404/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.404/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
