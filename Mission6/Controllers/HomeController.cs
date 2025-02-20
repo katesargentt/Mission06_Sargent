@@ -54,4 +54,12 @@ public class HomeController : Controller
         // Redirect to a confirmation view after successful form submission
         return View("Confirmation", response);
     }
+
+    public IActionResult MovieList()
+    {
+         var trackers = _context.Trackers
+            .Where(x => x.Edited == true);
+
+        return View();
+    }
 }

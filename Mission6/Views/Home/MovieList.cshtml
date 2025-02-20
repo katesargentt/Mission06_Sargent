@@ -1,0 +1,27 @@
+@{
+}
+
+@model Mission6.Models.Tracker
+<table>
+    <thead>
+        <td>Category</td>
+        <td>Title</td>
+        <td>Year</td>
+        <td>Director</td>
+        <td>Rating</td>
+        <td>Lent To</td>
+        <td>Edited</td>
+        <td>Notes</td>
+    </thead>
+      
+    <tbody>
+    <td>@Model.Category</td>
+    <td>@Model.Title</td>
+    <td>@Model.Year</td>
+    <td>@Model.Director</td>
+    <td>@Model.Rating</td>
+    <td>@Model.LentTo</td>
+    <td>@Model.Edited</td>
+    <td>@Model.Notes</td>
+    </tbody>
+</table>
