@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Mission6.Models;
 
@@ -9,7 +10,9 @@ public class Tracker
     public int MovieID { get; set; } // Primary key, auto-increment
 
     [Required(ErrorMessage = "Category is required.")]
-    public string Category { get; set; }
+    [ForeignKey("CategoryId")]
+    public int CategoryId { get; set; }
+    public Category Category { get; set; }
 
     [Required(ErrorMessage = "Title is required.")]
     public string Title { get; set; }

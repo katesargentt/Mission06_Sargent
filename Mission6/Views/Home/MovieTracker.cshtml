@@ -9,6 +9,13 @@
         <label asp-for="Category">Category:</label>
         <input asp-for="Category" class="form-control"/>
         <span asp-validation-for="Category" class="text-danger"></span>
+        <select>
+            <option value="">Select a Category</option>
+            @foreach (Category c in ViewBag.Categories)
+            {
+                <option value="">c.CategoryName</option>
+            }
+        </select>
     </div>
 
     <div>

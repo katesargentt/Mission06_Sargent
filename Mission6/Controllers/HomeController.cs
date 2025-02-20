@@ -33,6 +33,7 @@ public class HomeController : Controller
 
     public IActionResult MovieTracker()
     {
+        ViewBag.Categories = _context.Categories.ToList();
         return View();
     }
 
@@ -58,8 +59,9 @@ public class HomeController : Controller
     public IActionResult MovieList()
     {
          var trackers = _context.Trackers
-            .Where(x => x.Edited == true);
+            .Where(x => x.Edited == true)
+            .ToList();
 
-        return View();
+        return View(trackers);
     }
 }
