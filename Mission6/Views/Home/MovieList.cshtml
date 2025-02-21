@@ -1,0 +1,42 @@
+@{
+}
+
+@model List<Mission6.Models.Tracker>
+
+<table class="table table-bordered table-striped">
+    <thead class="fw-bold">
+    <tr>
+        <th>Category</th>
+        <th>Title</th>
+        <th>Year</th>
+        <th>Director</th>
+        <th>Rating</th>
+        <th>Lent To</th>
+        <th>Edited</th>
+        <th>Notes</th>
+        <th>Copied To Plex</th>
+        
+        
+    </tr>
+    </thead>
+      
+    <tbody>
+    @foreach (var movie in Model)
+    {
+        <tr>
+            <td>@movie.Category?.CategoryName</td> <!-- Fixed -->
+            <td>@movie.Title</td>
+            <td>@movie.Year</td>
+            <td>@movie.Director</td>
+            <td>@movie.Rating</td>
+            <td>@movie.LentTo</td>
+            <td>@movie.Edited</td>
+            <td>@movie.Notes k</td>
+            <td>@movie.CopiedToPlex</td>
+
+            <td><a class="btn btn-info" asp-controller="Home" asp-action="Edit" asp-route-id="@movie.MovieID">Edit</a></td>
+            <td><a class="btn btn-danger" asp-controller="Home" asp-action="Delete" asp-route-id="@movie.MovieID">Delete</a></td>
+        </tr>
+    }
+    </tbody>
+</table>

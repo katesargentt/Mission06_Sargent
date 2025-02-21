@@ -1,5 +1,6 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Mission6.Models;
 
 namespace Mission6.Controllers;
@@ -33,25 +34,82 @@ public class HomeController : Controller
 
     public IActionResult MovieTracker()
     {
-        return View();
+        Console.WriteLine("MovieTracker action called."); // Debug log
+
+        ViewBag.Categories = _context.Categories.ToList();
+        
+        return View("MovieTracker", new Tracker());
     }
+
+
 
     // POST method for MovieTracker
     [HttpPost]
     public IActionResult MovieTracker(Tracker response)
     {
         // Check if the model is valid before saving
-        if (!ModelState.IsValid)
+        if (ModelState.IsValid)
         {
-            // If invalid, return the form with validation error messages
+            // Add the record to the database and save changes
+            _context.Movies.Add(response);
+            _context.SaveChanges();
+            
+            // Redirect to a confirmation view after successful form submission
+            return View("Confirmation", response);
+        }
+        else //invalid data
+        {
+            ViewBag.Categories = _context.Categories.ToList();
+
             return View(response);
         }
 
-        // Add the record to the database and save changes
-        _context.Trackers.Add(response);
+        
+    }
+
+    public IActionResult MovieList()
+    {
+        var trackers = _context.Movies
+            .Include(t => t.Category) // Ensure Category data is included
+            .ToList();
+
+        return View(trackers);
+    }
+
+    [HttpGet]
+    public IActionResult Edit(int id)
+    {
+        var recordToEdit = _context.Movies
+            .Single(x => x.MovieID == id);
+        ViewBag.Categories = _context.Categories.ToList();
+        
+        return View("MovieTracker", recordToEdit);
+    }
+
+    [HttpPost]
+
+    public IActionResult Edit(Tracker updatedInfo)
+    {
+        _context.Update(updatedInfo);
         _context.SaveChanges();
-            
-        // Redirect to a confirmation view after successful form submission
-        return View("Confirmation", response);
+        
+        return RedirectToAction("MovieList");
+    }
+
+    [HttpGet]
+    public IActionResult Delete(int id)
+    {
+        var recordToDelete = _context.Movies
+            .Single(x => x.MovieID == id);
+        return View(recordToDelete);
+    }
+
+    [HttpPost]
+    public IActionResult Delete(Tracker tracker)
+    {
+        _context.Movies.Remove(tracker);
+        _context.SaveChanges();
+        
+        return RedirectToAction("MovieList");
     }
 }
