@@ -23,10 +23,10 @@ namespace Mission6.Models
         public int Year { get; set; }
 
         // Director is no longer required
-        public string Director { get; set; }
+        public string? Director { get; set; }
 
         // Rating is no longer required
-        public string Rating { get; set; }
+        public string? Rating { get; set; }
 
         // Nullable fields
         public string? LentTo { get; set; }

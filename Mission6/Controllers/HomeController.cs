@@ -51,7 +51,7 @@ public class HomeController : Controller
         if (ModelState.IsValid)
         {
             // Add the record to the database and save changes
-            _context.Trackers.Add(response);
+            _context.Movies.Add(response);
             _context.SaveChanges();
             
             // Redirect to a confirmation view after successful form submission
@@ -69,7 +69,7 @@ public class HomeController : Controller
 
     public IActionResult MovieList()
     {
-        var trackers = _context.Trackers
+        var trackers = _context.Movies
             .Include(t => t.Category) // Ensure Category data is included
             .ToList();
 
@@ -79,7 +79,7 @@ public class HomeController : Controller
     [HttpGet]
     public IActionResult Edit(int id)
     {
-        var recordToEdit = _context.Trackers
+        var recordToEdit = _context.Movies
             .Single(x => x.MovieID == id);
         ViewBag.Categories = _context.Categories.ToList();
         
@@ -99,7 +99,7 @@ public class HomeController : Controller
     [HttpGet]
     public IActionResult Delete(int id)
     {
-        var recordToDelete = _context.Trackers
+        var recordToDelete = _context.Movies
             .Single(x => x.MovieID == id);
         return View(recordToDelete);
     }
@@ -107,7 +107,7 @@ public class HomeController : Controller
     [HttpPost]
     public IActionResult Delete(Tracker tracker)
     {
-        _context.Trackers.Remove(tracker);
+        _context.Movies.Remove(tracker);
         _context.SaveChanges();
         
         return RedirectToAction("MovieList");

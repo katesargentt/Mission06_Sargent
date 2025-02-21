@@ -9,7 +9,7 @@ public class MovieTrackerContext : DbContext
         
     }
     
-    public DbSet<Tracker> Trackers { get; set; }
+    public DbSet<Tracker> Movies { get; set; }
     
     public DbSet<Category> Categories { get; set; }
 
