@@ -14,6 +14,8 @@
         <th>Lent To</th>
         <th>Edited</th>
         <th>Notes</th>
+        <th>Copied To Plex</th>
+        
     </tr>
     </thead>
       
@@ -21,7 +23,7 @@
     @foreach (var movie in Model)
     {
         <tr>
-            <td>@movie.Category</td>
+            <td>@movie.Category?.CategoryName</td> <!-- Fixed -->
             <td>@movie.Title</td>
             <td>@movie.Year</td>
             <td>@movie.Director</td>
@@ -29,6 +31,10 @@
             <td>@movie.LentTo</td>
             <td>@movie.Edited</td>
             <td>@movie.Notes</td>
+            <td>@movie.CopiedToPlex</td>
+
+            <td><a class="btn-info" asp-controller="Home" asp-action="Edit" asp-route-id="@movie.MovieID">Edit</a></td>
+            <td><a class="btn-danger" asp-controller="Home" asp-action="Delete" asp-route-id="@movie.MovieID">Delete</a></td>
         </tr>
     }
     </tbody>
